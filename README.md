@@ -1,11 +1,3 @@
-# Site de Portfólio pessoal.
+# Projeto para a aula de PW
 
- Projeto da disciplina de PW do CentroUniversitário SENAC
-
-## Tarefas
-
-- [ ] Header
-- [ ] Apresentação
-- [ ] Projetos
-- [ ] Menu
-- [ ] Responsabilidade 
+ Projeto da disciplina de PW do Centro Universitário SENAC
