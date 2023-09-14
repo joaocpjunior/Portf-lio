@@ -84,7 +84,7 @@ span{
     margin-right: 4rem;
 }
 
-input{
+.pesquisa input{
     width: 24em;
     height: 3em;
     border-radius: 1.1em;
@@ -113,7 +113,7 @@ input{
 footer{
     background-color: #FFC700;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 5em;
@@ -135,4 +135,10 @@ footer{
 .itens-rodape:hover{
     opacity: 40%;
     transition: all 0.5s;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
 }
