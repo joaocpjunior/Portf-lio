@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,18 +15,18 @@
         <form action="">
             <div class="campo linha">
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Fulano da Silva">
+                <input type="text" placeholder="Fulano da Silva" id="nome">
             </div>
 
             <div class="campo">
                 <label for=""> qtde de paginas</label>
-                <input type="number" min="1">
+                <input type="number" min="1" id="paginas">
             </div>
             <div class="campo">
             <label for="tipo">tipo</label>
                 <select name="tipo" id="tipo">
-                    <option value="">estático</option>
-                    <option value="">Dinâmico</option>
+                    <option value="1">estático</option>
+                    <option value="2">Dinâmico</option>
                 </select>
             </div>
             
@@ -33,10 +34,10 @@
                 <label for="layout">precisa de layout?</label>
             
                 <div>
-                    <input type="radio" name="layout" id="">
+                    <input type="radio" name="layout" id="layout_sim">
                     <label for="layout_sim">sim, preciso</label>
             
-                    <input type="radio" name="layout" id="">
+                    <input type="radio" name="layout" id="layout_nao">
                     <label for="layout_nao">não, já tenho</label>
                 </div>
             </div>
@@ -48,8 +49,11 @@
     
             <div class="campo linha">
                 <label for="prazo">prazo</label>
-                <input type="range" id="prazo">
+                <input type="range" id="prazo" min="2" max="10">
             </div>
+
+            <output></output>
+            
         </form>
     
     </section>
