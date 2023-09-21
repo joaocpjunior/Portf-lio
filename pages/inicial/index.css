@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -103,6 +103,7 @@ span{
     padding: 1em 2em;
     margin-bottom: 4.6em;
     background-color: var(--primary-color);
+    height: 100vh;
 }
 
 .faixa2{

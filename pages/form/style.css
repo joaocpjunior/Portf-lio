@@ -1,4 +1,11 @@
-
+body{
+    background-image: url('../../assets/fundo-form.png');
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
 #secao-orcamento {
     height: 100vh;
@@ -15,7 +22,7 @@ form{
     max-width: 500px;
     border-radius: .5rem;
     padding: 2rem;
-    margin: 2rem auto;
+    
     gap: 1rem;
 }
 
@@ -41,6 +48,10 @@ select
 input[type = "range"],
 input[type = "radio" ]{
     accent-color: 5;
+}
+
+input{
+    margin-bottom: 1rem;
 }
 
 .submit{
