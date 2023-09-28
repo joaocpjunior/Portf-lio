@@ -5,6 +5,66 @@ body{
     box-sizing: border-box;
 }
 
+#menu-icon{
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    position: fixed;
+    z-index: 10;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+#menu{
+    position: fixed;
+    background-color: #FFC700;
+    height: 100vh;
+    padding: 3rem;
+    z-index: 9;
+    right: 0;
+    text-decoration: none;
+    transform: translateX(100%);
+    transition: 1000ms;
+
+}
+
+#menu.open{
+    transform: translateX(0%);
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.menu-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+#menu li{
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: background-color .5rem;
+}
+
+#menu li:hover{
+    background-color: #b68f03;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
 :root{
     --primary-color: white;
     --primary-menu-color: #FFC700;
@@ -32,7 +92,7 @@ header{
     align-items: center;
 }
 
-span{
+#two{
     color: #F10D0D;
 }
 
@@ -80,16 +140,21 @@ span{
 }
 
 
-.pesquisa{
+#pesquisa-div{
     margin-right: 4rem;
 }
 
-.pesquisa input{
+#pesquisa-div input{
     width: 24em;
     height: 3em;
     border-radius: 1.1em;
     border: none;
     
+}
+
+.pesquisa{
+    opacity: 0;
+    transition: 1000ms;
 }
 
 .corpo{
@@ -121,7 +186,7 @@ footer{
     bottom: 0;
 }
 
-.pesquisa img{
+#pesquisa-div img{
     width: 25px;
     position: relative;
     right: 40px;
@@ -129,7 +194,7 @@ footer{
     opacity: 40%;
 }
 
-.pesquisa img:hover{
+#pesquisa-div img:hover{
     opacity: 90%;
 }
 

@@ -5,6 +5,75 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#menu-icon{
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    position: fixed;
+    z-index: 10;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+#menu{
+    position: fixed;
+    background-color: #FFC700;
+    height: 100vh;
+    padding: 3rem;
+    z-index: 9;
+    right: 0;
+    text-decoration: none;
+    transform: translateX(100%);
+    transition: 1000ms;
+
+}
+
+#menu.open{
+    transform: translateX(0%);
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.menu-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#menu li{
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: background-color .5rem;
+    text-decoration: none;
+}
+
+#menu li:hover{
+    background-color: #b68f03;
+}
+
+li{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #secao-orcamento {
